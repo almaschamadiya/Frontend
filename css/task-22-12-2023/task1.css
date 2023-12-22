@@ -1,0 +1,24 @@
+.class1{
+    color:black;
+    background-color: rgb(191, 132, 246);
+    border:  2px solid black;
+    height: 100px;
+    width: 80%;
+    margin: 50px 100px;
+    padding:20px 10px;
+}
+.class2{
+    color:black;
+    background-color: rgb(246, 123, 123);
+    border: 2px solid black;
+    height: 100px;
+    width: 80%;
+    margin: 50px 100px;
+    padding:20px 10px;
+
+
+}
+
+body{
+    background-color: rgb(244, 191, 200);
+}
