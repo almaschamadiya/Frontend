@@ -1,0 +1,43 @@
+h2{
+    text-align: center;
+}    
+div{
+    background-color: #4e9b4e;
+    /* display: flex;
+    justify-content: space-evenly; */
+    padding: 10px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li{
+    list-style-type: none;
+    display: inline;
+    background-color:gray;
+    ;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.outer{
+    height: 300px;
+    width: 300px;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+.inner{
+    height: 100px;
+    width: 100px;
+    background-color: violet;
+}
