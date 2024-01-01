@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-shadow:  3px 3px rgb(238, 152, 218);
+    padding: 10px;
+}
+
+h3{
+    padding: 10px;
+}
+.loader{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid black;
+    border-top: 10px solid grey;
+    animation-name: spinAnimate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    margin: auto;
+}
+
+@keyframes spinAnimate{
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.container{
+    height: 350px;
+    width: 400px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    border-radius: 10px;
+    box-sizing: border-box;
+
+}
+
+.image img{
+    height: 300px;
+    width: 400px;
+}
+
+.body{
+    text-align: center;
+    background-color: rgb(168, 162, 162);
+    height: 50px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    color: white;
+}
