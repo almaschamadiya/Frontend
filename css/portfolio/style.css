@@ -1,5 +1,6 @@
 * {
     margin: 0px;
+    padding: 0px;
     border: border-box;
 }
 
@@ -33,6 +34,7 @@
     font-weight: 900;
     line-height: normal;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .section-1 .main-container .container .navbar .nav-items {
@@ -88,6 +90,7 @@
     text-align: center;
     width: 200px;
     margin: 20px 0px;
+    cursor: pointer;
 }
 
 /* section-2 */
@@ -270,6 +273,7 @@
     justify-content: center;
     align-items: center;
     padding-top: 20px;
+    cursor: pointer;
 }
 
 /* section-4  */
@@ -537,4 +541,153 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+/* section-7  */
+
+.section-7 .main-container {
+    width: 100%;
+    background-color: #FFF;
+    padding: 60px 0px;
+}
+
+.section-7 .main-container .container {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.section-7 .main-container .container .content .heading {
+    color: #3C4761;
+    text-align: center;
+    font-family: Titillium Web;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.section-7 .main-container .container .content .title {
+    color: #3C4761;
+    text-align: center;
+    font-family: Titillium Web;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-top: 25px;
+}
+
+.section-7 .main-container .container .form {
+    padding-top: 50px;
+    width: 80%;
+    margin: 0px auto;
+}
+
+.section-7 .main-container .container .form .details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-7 .main-container .container .form .details .nm {
+    width: 48%;
+}
+
+.section-7 .main-container .container .form .details .nm input {
+    background-color: #273A71;
+    width: 100%;
+    padding: 10px;
+}
+
+.section-7 .main-container .container .form .details .nm input ::placeholder {
+    color: #FFF;
+    font-family: Titillium Web;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.section-7 .main-container .container .form .details .email {
+    width: 48%;
+}
+
+.section-7 .main-container .container .form .details .email input {
+    background-color: #273A71;
+    width: 100%;
+    padding: 10px;
+}
+
+.section-7 .main-container .container .form .details .email input ::placeholder {
+    color: #FFF;
+    font-family: Titillium Web;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.section-7 .main-container .container .form .address textarea {
+    background-color: #273A71;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.section-7 .main-container .container .form .address textarea ::placeholder {
+    color: #FFF;
+    font-family: Titillium Web;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.section-7 .main-container .container .form .button {
+    background-color: #2B54B6;
+    width: 30%;
+    padding: 15px;
+    text-align: center;
+    margin: 30px auto;
+    color: #FFF;
+    font-family: Titillium Web;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+}
+
+/* footer  */
+
+footer{
+    background-color: #273A71;
+    padding: 20px;
+}
+
+footer .items{
+    width: 80%;
+    margin: 0px auto;
+}
+
+footer .items ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+footer .items ul li{
+    color: #FFF;
+    text-align: center;
+    font-family: Titillium Web;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+footer .items ul li:hover{
+    color: #30BAE7;
+    cursor: pointer;
 }
