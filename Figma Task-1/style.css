@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* section-1 */
+.section-1 {
+    width: 100%;
+}
+
+.section-1 .my-navbar {
+    display: flex;
+    margin-top: 20px;
+}
+
+.section-1 .my-navbar .left {
+    width: 50%;
+}
+
+.section-1 .my-navbar .left ul {
+    display: flex;
+    align-items: center;
+}
+
+.section-1 .my-navbar .left ul li {
+    list-style: none;
+    padding: 10px 30px;
+}
+
+.section-1 .my-navbar .left .brand {
+    color: #60269E;
+    font-family: Candara;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.section-1 .my-navbar .left .business {
+    color: #222;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.section-1 .my-navbar .right {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    padding-right: 80px;
+}
+
+.section-1 .my-navbar .right .signup {
+    color: #60269E;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.section-1 .my-navbar .right .login-btn {
+    display: inline-flex;
+    padding: 10px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background: #60269E;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: normal;
+}
+
+.section-1 .content {
+    display: flex;
+    margin-top: 50px;
+    width: 95%;
+    margin: 0px auto;
+}
+
+.section-1 .content .left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.section-1 .content h1 {
+    color: #222;
+    font-family: Roboto;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 121.687%;
+}
+
+.section-1 .content h1 span {
+    background: linear-gradient(98deg, #60269E 1.96%, #03CFFC 36.81%, #B977FF 77.81%, #6508C9 100.36%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Roboto;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 121.687%;
+}
+
+.section-1 .content .left .left-content p {
+    color: #666;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.section-1 .content .left .left-content {
+    width: 85%;
+    margin: 0px auto;
+}
+
+.section-1 .content .left .left-content .left-btn {
+    display: flex;
+    padding: 15px 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background: linear-gradient(95deg, #B977FF -11.97%, #60269E 105%);
+    width: 50%;
+    margin-top: 30px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.section-1 .content .left .left-content .left-btn span {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.section-1 .content .left .left-content .section-1-btn {
+    display: flex;
+}
+
+.section-1 .content .left .left-content .right-btn {
+    display: flex;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    border: 1px solid #60269E;
+    width: 50%;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.section-1 .content .left .left-content .right-btn span {
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: linear-gradient(92deg, #B977FF -12.25%, #60269E 111.25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-1 .content .right {
+    display: flex;
+    justify-content: center;
+}
+
+.section-1 .content .right .img img {
+    height: 450px;
+}
+
+/* section-2 */
+
+.section-2 {
+    width: 100%;
+    background: #F6EEFF;
+    margin-top: 30px;
+    /* height: 1400px; */
+    padding-bottom: 150px;
+}
+
+.section-2 .container {
+    padding-top: 150px;
+    display: flex;
+    width: 95%;
+    margin: 0px auto;
+}
+
+.section-2 .container .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 0.5px solid rgba(0, 0, 0, 0.25);
+    background: #FFF;
+    width: 33%;
+    padding-top: 20px;
+}
+
+.section-2 .container .cards:hover {
+    box-shadow: 2px 11px 15px 0px rgba(51, 51, 51, 0.15), -2px -11px 15px 0px rgba(96, 38, 158, 0.15);
+}
+
+.section-2 .container .cards .title h4 {
+    color: #60269E;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.section-2 .container .cards .desc p {
+    color: #676767;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.188%;
+    width: 70%;
+    margin: 0px auto;
+    margin-bottom: 40px;
+}
+
+.section-2 .container-2 {
+    display: flex;
+    width: 95%;
+    margin: 0px auto;
+}
+
+.section-2 .container-2 .left {
+    width: 50%;
+    padding-top: 85px;
+    padding-left: 60px;
+}
+
+.section-2 .container-2 .left .img {
+    position: relative;
+    background: hsl(268, 100%, 97%);
+
+}
+
+.section-2 .container-2 .left .img .img-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 700px;
+}
+
+.section-2 .container-2 .left .img .img-2 {
+    position: absolute;
+    top: 20px;
+    left: 23px;
+    height: 650px;
+}
+
+.section-2 .container-2 .right {
+    width: 50%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    height: 700px;
+    padding-top: 60px;
+    flex-direction: column;
+
+}
+
+
+.section-2 .container-2 .right .title h3 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+
+}
+
+.section-2 .container-2 .right .desc p {
+    color: #676767;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 174.688%;
+}
+
+.section-2 .container-2 .right .section-2-btn{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.section-2 .container-2 .right .sec-2-btn {
+    display: flex;
+    padding: 15px 30px;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    border-radius: 50px;
+    background: linear-gradient(95deg, #B977FF -11.97%, #60269E 105%);
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
