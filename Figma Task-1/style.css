@@ -417,6 +417,7 @@
     width: 90%;
     display: flex;
     margin: 0px auto;
+    border-bottom: 1px solid #000;
 }
 
 .section-4 .top .left {
@@ -490,6 +491,279 @@
     justify-content: end;
 }
 
-.section-4 .top .right img{
+.section-4 .top .right img {
     height: 500px;
+}
+
+.section-4 .middle {
+    padding-top: 30px;
+}
+
+.section-4 .middle p {
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 80%;
+    margin: 0px auto;
+}
+
+.section-4 .buttom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section-4 .buttom .title h4 {
+    color: #60269E;
+    font-family: Roboto;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 118.688%;
+}
+
+.section-4 .buttom .desc p {
+    color: #676767;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 151.188%;
+}
+
+.section-4 .buttom .last {
+    display: flex;
+    padding: 6px 6px 6px 20px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 277px;
+    border-radius: 8px;
+    border: 2px solid rgba(45, 45, 45, 0.20);
+    background: #FFF;
+}
+
+.section-4 .buttom .last .style1 {
+    color: #676767;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 124%;
+    justify-content: start;
+    width: 80%;
+}
+
+.section-4 .buttom .last .style2 {
+    display: flex;
+    height: 53px;
+    padding: 11px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    background: #60269E;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 124%;
+    width: 20%;
+}
+
+/* section -5  */
+
+.section-5 {
+    background-color: #FFF;
+    /* height: 500px; */
+}
+
+.section-5 footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.section-5 footer .container-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0px auto;
+}
+
+.section-5 footer .container-1 .div1 {
+    /* background-color: red; */
+    /* height: 100px; */
+    width: 40%
+}
+
+.section-5 footer .container-1 .div1 .heading h4 {
+    color: #60269E;
+    font-family: Candara;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.section-5 footer .container-1 .div1 title p {
+    color: #666;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 124%;
+}
+
+.section-5 footer .container-1 .div1 .sec-5-btn {
+    display: flex;
+}
+
+.section-5 footer .container-1 .div1 .sec-5-btn img {
+    width: 100px;
+    margin-right: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.section-5 footer .container-1 .div2 {
+    /* background-color: green; */
+    /* height: 100px; */
+    width: 20%;
+}
+
+.section-5 footer .container-1 .div2 .heading h4 {
+    color: #666;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.section-5 footer .container-1 .div2 .list ul {
+    padding: 0px;
+}
+
+.section-5 footer .container-1 .div2 .list ul li {
+    color: #666;
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+
+.section-5 footer .container-1 .div3 {
+    /* background-color: blue; */
+    /* height: 100px; */
+    width: 20%;
+}
+
+.section-5 footer .container-1 .div3 .heading h4 {
+    color: #666;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.section-5 footer .container-1 .div3 .list ul {
+    padding: 0px;
+}
+
+.section-5 footer .container-1 .div3 .list ul li {
+    color: #666;
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+.section-5 footer .container-1 .div4 {
+    /* background-color: purple; */
+    /* height: 100px; */
+    width: 20%;
+}
+
+.section-5 footer .container-1 .div4 .heading h4 {
+    color: #666;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.section-5 footer .container-1 .div4 .list ul {
+    padding: 0px;
+}
+
+.section-5 footer .container-1 .div4 .list ul li {
+    color: #666;
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+.section-5 footer .container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0px auto;
+    padding-top: 50px;
+}
+
+.section-5 footer .container-2 .div1 {
+    /* background-color: #00ff66; */
+    /* height: 100px; */
+    width: 40%;
+}
+
+.section-5 footer .container-2 .div1 p {
+    color: #666;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.section-5 footer .container-2 .div2 {
+    /* background-color: rgb(244, 32, 184); */
+    /* height: 100px; */
+    width: 40%;
+}
+
+.section-5 footer .container-2 .div2 p {
+    color: #666;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.section-5 footer .container-2 .div3 {
+    /* background-color: rgb(228, 241, 43); */
+    /* height: 100px; */
+    width: 20%;
 }
