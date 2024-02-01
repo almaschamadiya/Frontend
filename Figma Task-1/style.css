@@ -35,6 +35,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    cursor: pointer;
 }
 
 .section-1 .my-navbar .left .business {
@@ -44,6 +45,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    cursor: pointer;
 }
 
 .section-1 .my-navbar .right {
@@ -63,6 +65,7 @@
     display: flex;
     align-items: center;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .section-1 .my-navbar .right .login-btn {
@@ -79,6 +82,7 @@
     font-style: normal;
     font-weight: 350;
     line-height: normal;
+    cursor: pointer;
 }
 
 .section-1 .content {
@@ -196,15 +200,13 @@
     width: 100%;
     background: #F6EEFF;
     margin-top: 30px;
-    /* height: 1400px; */
     padding-bottom: 150px;
 }
 
 .section-2 .container {
     padding-top: 150px;
     display: flex;
-    width: 95%;
-    margin: 0px auto;
+    width: 100%;
 }
 
 .section-2 .container .cards {
@@ -344,6 +346,7 @@
     width: 100%;
     display: flex;
     align-items: center;
+    padding: 40px 0px;
 }
 
 .section-3 .main-container .left {
@@ -399,11 +402,21 @@
     width: 60%;
     padding-top: 30px;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.section-3 .main-container .right .image-container .img1 img {
+    width: 350px;
 }
 
 .section-3 .main-container .right .image-container .img2 {
     width: 40%;
     background-size: cover;
+}
+
+.section-3 .main-container .right .image-container .img2 img {
+    width: 250px;
 }
 
 /* section-4 */
@@ -418,6 +431,8 @@
     display: flex;
     margin: 0px auto;
     border-bottom: 1px solid #000;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .section-4 .top .left {
@@ -482,6 +497,7 @@
     border-radius: 50px;
     background: linear-gradient(95deg, #B977FF -11.97%, #60269E 105%);
     width: 40%;
+    cursor: pointer;
 }
 
 .section-4 .top .right {
@@ -515,8 +531,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 .section-4 .buttom .title h4 {
@@ -557,6 +573,8 @@
     line-height: 124%;
     justify-content: start;
     width: 80%;
+    border: none;
+    outline: none;
 }
 
 .section-4 .buttom .last .style2 {
@@ -630,6 +648,7 @@
     margin-right: 5px;
     border: 1px solid black;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .section-5 footer .container-1 .div2 {
@@ -766,4 +785,908 @@
     /* background-color: rgb(228, 241, 43); */
     /* height: 100px; */
     width: 20%;
+    cursor: pointer;
+}
+
+/* media query */
+
+@media only screen and (max-width: 1150px) {
+    .section-1 .content h1 {
+        font-size: 40px;
+    }
+
+    .section-1 .content h1 span {
+        font-size: 40px;
+    }
+
+    .section-1 .content .left .left-content .left-btn,
+    .right-btn {
+        padding: 7px;
+    }
+
+    .section-1 .content .right .img img {
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .section-1 .content .left .left-content .right-btn {
+        padding: 10px;
+    }
+
+    .section-2 .container {
+        padding-top: 80px;
+    }
+
+    .section-3 .main-container .right .image-container {
+        display: flex;
+        width: 95%;
+        align-items: center;
+    }
+
+    .section-3 .main-container .left {
+        width: 40%;
+        padding: 20px;
+    }
+
+    .section-3 .main-container .left .title h3 {
+        font-size: 30px;
+    }
+
+    .section-3 .main-container .left .desc p {
+        font-size: 12px;
+    }
+
+    .section-3 .main-container .left .image-container .img1 img {
+        width: 80px;
+    }
+
+    .section-3 .main-container .left .image-container .img2 img {
+        width: 80px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .section-1 .content .left .left-content .left-btn span {
+        font-size: 14px;
+    }
+
+    .section-1 .content .left .left-content .right-btn span {
+        font-size: 14px;
+    }
+
+    .section-3 .main-container .right .image-container .img1 {
+        width: 100%;
+    }
+
+    .section-3 .main-container .right .image-container .img1 img {
+        width: 300px;
+    }
+
+    .section-3 .main-container .right .image-container .img2 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .section-1 .my-navbar .right .signup {
+        font-size: 15px;
+    }
+
+    .section-1 .my-navbar .right .login-btn {
+        font-size: 15px;
+    }
+
+    .section-1 .content h1 {
+        font-size: 35px;
+    }
+
+    .section-1 .content h1 span {
+        font-size: 35px;
+    }
+
+    .section-1 .content .left .left-content p {
+        font-size: 16px;
+    }
+
+    .section-1 .content .left .left-content .left-btn span {
+        font-size: 12px;
+    }
+
+    .section-1 .content .left .left-content .right-btn span {
+        font-size: 12px;
+    }
+
+    .section-1 .content .right .img img {
+        height: 350px;
+    }
+
+    .section-2 .container-2 .right {
+        padding-left: 50px;
+    }
+
+    .section-2 .container-2 .right .title h3 {
+        font-size: 30px;
+    }
+
+    .section-2 .container-2 .right .desc p {
+        font-size: 15px;
+    }
+
+    .section-2 .container-2 .right .sec-2-btn {
+        font-size: 15px;
+    }
+
+    .section-4 .top .left .title h3 {
+        font-size: 35px;
+    }
+
+    .section-4 .top .left .title h3 span {
+        font-size: 35px;
+    }
+
+    .section-4 .top .left .desc p {
+        font-size: 15px;
+    }
+
+    .section-4 .top .left .sec-4-btn {
+        font-size: 15px;
+    }
+
+    .section-4 .top .right img {
+        height: 400px;
+    }
+
+    .section-4 .buttom .title h4 {
+        font-size: 35px;
+    }
+
+    .section-4 .buttom .desc p {
+        font-size: 15px;
+    }
+
+    .section-4 .buttom .last {
+        height: 50px;
+    }
+
+    .section-4 .buttom .last .style1 {
+        font-size: 18px;
+    }
+
+    .section-4 .buttom .last .style2 {
+        height: 35px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .section-1 .content h1 {
+        font-size: 30px;
+    }
+
+    .section-1 .content h1 span {
+        font-size: 30px;
+    }
+
+    .section-1 .content .left .left-content .left-btn span {
+        font-size: 10px;
+    }
+
+    .section-1 .content .left .left-content .right-btn span {
+        font-size: 10px;
+    }
+
+    .section-2 .container .cards .title h4 {
+        font-size: 20px;
+    }
+
+    .section-2 .container .cards .desc p {
+        font-size: 12px;
+    }
+
+    .section-2 .container-2 .left .img .img-1 {
+        height: 650px;
+    }
+
+    .section-2 .container-2 .left .img .img-2 {
+        height: 600px;
+    }
+
+    .section-4 .top .left .title h3 {
+        font-size: 30px;
+    }
+
+    .section-4 .top .left .title h3 span {
+        font-size: 32px;
+    }
+
+    .section-4 .top .left .sec-4-btn {
+        font-size: 12px;
+    }
+
+    .section-4 .middle p {
+        font-size: 14px;
+    }
+
+    .section-5 footer .container-1 .div1 .sec-5-btn img {
+        width: 80px;
+    }
+
+    .section-5 footer .container-1 .div2 .heading h4 {
+        font-size: 20px;
+    }
+
+    .section-5 footer .container-1 .div2 .list ul li {
+        font-size: 15px;
+    }
+
+    .section-5 footer .container-1 .div3 .heading h4 {
+        font-size: 20px;
+    }
+
+    .section-5 footer .container-1 .div3 .list ul li {
+        font-size: 15px;
+    }
+
+    .section-5 footer .container-1 .div4 .heading h4 {
+        font-size: 20px;
+    }
+
+    .section-5 footer .container-1 .div4 .list ul li {
+        font-size: 15px;
+    }
+
+    .section-5 footer .container-2 .div1 p {
+        font-size: 10px;
+    }
+
+    .section-5 footer .container-2 .div2 p {
+        font-size: 10px;
+    }
+
+    .section-5 footer .container-2 .div3 {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .section-1 .my-navbar .left .brand {
+        font-size: 22px;
+    }
+
+    .section-1 .my-navbar .left .business {
+        font-size: 18px;
+    }
+
+    .section-1 .my-navbar .right {
+        display: flex;
+        align-items: center;
+    }
+
+    .section-1 .my-navbar .right .signup{
+        font-size: 13px;
+    }
+
+    .section-1 .my-navbar .right .login-btn{
+        font-size: 13px;
+        height: 25%;
+    }
+
+    .section-1 .content h1{
+        font-size: 25px;
+    }
+
+    .section-1 .content h1 span{
+        font-size: 25px;
+    }
+
+    .section-1 .content .left .left-content p{
+        font-size: 12px;
+    }
+
+    .section-1 .content .left .left-content .left-btn{
+        height: 30px;
+    }
+
+    .section-1 .content .left .left-content .left-btn span{
+        font-size: 8px;
+    }
+
+    .section-1 .content .left .left-content .right-btn{
+        height: 30px;
+    }
+
+    .section-1 .content .left .left-content .right-btn span{
+        font-size: 8px;
+    }
+
+    .section-1 .content .right .img img {
+        height: 300px;
+    }
+
+    .section-2 .container-2 .left .img .img-1{
+        height: 600px;
+    }
+
+    .section-2 .container-2 .left .img .img-2{
+        height: 550px;
+    }
+
+    .section-2 .container-2 .right{
+        padding-left: 60px;
+    }
+
+    .section-2 .container-2 .right .title h3 {
+        font-size: 25px;
+    }
+
+    .section-2 .container-2 .right .desc p {
+        font-size: 12px;
+    }
+
+    .section-2 .container-2 .right .sec-2-btn{
+        font-size: 12px;
+    }
+
+    .section-3 .main-container .left .title h3{
+        font-size: 25px;
+    }
+    
+    .section-3 .main-container .right .image-container .img1 img {
+        width: 250px;
+    }
+
+    .section-4 .top .left .heading h5{
+        font-size: 20px;
+    }
+
+    .section-4 .top .left .title h3{
+        font-size: 25px;
+    }
+
+    .section-4 .top .left .title h3 span{
+        font-size: 25px;
+    }
+
+    .section-4 .top .left .desc p{
+        font-size: 12px;
+    }
+
+    .section-4 .top .left .sec-4-btn{
+        font-size: 10px;
+    }
+
+    .section-4 .top .right img {
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .section-1 .content .right .img img{
+        height: 250px;
+    }
+
+    .section-2 {
+        padding-bottom: 60px;
+    }
+
+    .section-2 .container .cards .title h4{
+        font-size: 15px;
+    }
+
+    .section-2 .container .cards .desc p{
+        font-size: 10px;
+    }
+
+    .section-2 .container-2 .left .img .img-1{
+        height: 550px;
+    }
+
+    .section-2 .container-2 .left .img .img-2{
+        height: 500px;
+    }
+
+    .section-2 .container-2 .right{
+        padding-left: 65px;
+    }
+
+    .section-3 .main-container .left{
+        width: 60%;
+    }
+
+    .section-3 .main-container .left .title h3{
+        font-size: 20px;
+    }
+
+    .section-3 .main-container .left .desc p{
+        font-size: 10px;
+    }
+
+    .section-3 .main-container .left .image-container .img1 img{
+        width: 60px;
+    }
+
+    .section-3 .main-container .left .image-container .img2 img{
+        width: 60px;
+    }
+
+    .section-3 .main-container .right{
+        width: 40%;
+    }
+
+    .section-3 .main-container .right .image-container .img1 img{
+        width: 200px;
+    }
+
+    .section-4 .top .left .heading h5{
+        font-size: 15px;
+    }
+
+    .section-4 .top .left .title h3{
+        font-size: 20px;
+    }
+
+    .section-4 .top .left .title h3 span{
+        font-size: 20px;
+    }
+
+    .section-4 .top .right img{
+        height: 300px;
+    }
+
+    .section-4 .middle p{
+        font-size: 12px;
+    }
+
+    .section-4 .buttom .title h4{
+        font-size: 30px;
+    }
+
+    .section-4 .buttom .last{
+        width: 90%;
+    }
+
+    .section-4 .buttom .last .style1{
+        font-size: 16px;
+    }
+
+    .section-5 footer .container-1 .div1 .heading h4{
+        font-size: 20px;
+    }
+
+    .section-5 footer .container-1 .div1 title p{
+        font-size: 12px;
+    }
+
+    .section-5 footer .container-1 .div1 .sec-5-btn img{
+        width: 60px;
+    }
+
+    .section-5 footer .container-1 .div2 .heading h4{
+        font-size: 15px;
+    }
+
+    .section-5 footer .container-1 .div2 .list ul li{
+        font-size: 10px;
+    }
+
+    .section-5 footer .container-1 .div3 .heading h4{
+        font-size: 15px;
+    }
+
+    .section-5 footer .container-1 .div3 .list ul li{
+        font-size: 10px;
+    }
+
+    .section-5 footer .container-1 .div4 .heading h4{
+        font-size: 15px;
+    }
+
+    .section-5 footer .container-1 .div4 .list ul li{
+        font-size: 10px;
+    }
+
+    .section-5 footer .container-2 .div3 svg{
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    .section-2 {
+        padding-bottom: 60px;
+    }
+
+
+    .section-4 .top .left .sec-4-btn{
+        height: 20px;
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .section-1 .content .left .left-content .left-btn span {
+        font-size: 7px;
+    }
+
+    .section-1 .content .left .left-content .right-btn span {
+        font-size: 7px;
+    }
+
+    .section-2 {
+        padding-bottom: 40px;
+    }
+
+    .section-2 .container-2{
+        padding-top: 40px;
+    }
+
+    .section-2 .container-2 .left{
+        width: 40%;
+        padding: 0px;
+    }
+
+    .section-2 .container-2 .left .img .img-1{
+        height: 450px;
+    }
+
+    .section-2 .container-2 .left .img .img-2{
+        height: 400px;
+        left: 20px;
+    }
+
+    .section-2 .container-2 .right{
+        width: 60%;
+        height: 450px;
+    }
+
+    .section-4 .top .left .sec-4-btn{
+        font-size: 7px;
+    }
+
+    .section-4 .buttom{
+        padding: 70px 0px;
+    }
+
+    .section-4 .buttom .title h4{
+        font-size: 25px;
+    }
+
+    .section-4 .buttom .desc p{
+        font-size: 12px;
+    }
+
+    section-4 .buttom .last{
+        height: 40px;
+    }
+
+    .section-4 .buttom .last .style1 {
+        font-size: 14px;
+    }
+
+    .section-4 .buttom .last .style2{
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .section-5 footer .container-1 .div1{
+        width: 45%;
+    }
+
+    .section-5 footer .container-1 .div1 title p{
+        font-size: 12px;
+    }
+
+    .section-5 footer .container-1 .div1 .sec-5-btn img {
+        width: 50px;
+    }
+
+    .section-5 footer .container-2 .div1 p{
+        font-size: 8px;
+    }
+
+    .section-5 footer .container-2 .div2 p{
+        font-size: 8px;
+    }
+
+    .section-5 footer .container-2 .div3 svg{
+        height: 15px;
+        width: 15px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+
+    .section-1 .my-navbar .left .business{
+        display: none;
+    }
+
+    .section-1 .my-navbar .right{
+        display: none;
+    }
+
+    .section-1 .content h1 {
+        font-size: 20px;
+    }
+
+    .section-1 .content h1 span {
+        font-size: 20px;
+    }
+
+    .section-1 .content .left .left-content p{
+        font-size: 10px;
+    }
+
+    .section-1 .content .left .left-content .left-btn{
+        height: 20px;
+    }
+
+    .section-1 .content .left .left-content .left-btn span{
+        font-size: 5px;
+    }
+
+    .section-1 .content .left .left-content .right-btn{
+        height: 20px;
+    }
+
+    .section-1 .content .left .left-content .right-btn span{
+        font-size: 5px;
+    }
+
+    .section-1 .content .right .img img {
+        height: 200px;
+    }
+
+    .section-2 .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-2 .container .cards{
+        width: 80%;
+        padding: 10px 5px;
+        margin: 10px 5px;
+    }
+
+    .section-2 .container-2 .left{
+        display: none;
+    }
+
+    .section-2 .container-2 .right{
+        width: 100%;
+        height: 200px;
+        padding: 0px;
+        align-items: center;
+    }
+
+    .section-2 .container-2 .right .section-2-btn{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-3 .main-container{
+        flex-direction: column;
+    }
+
+    .section-3 .main-container .left{
+        width: 80%;
+    }
+
+    .section-3 .main-container .right .image-container .img1 img{
+        width: 150px;
+    }
+
+    .section-4 .top{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-4 .top .left{
+        width: 90%;
+    }
+
+    .section-4 .top .right img {
+        height: 250px;
+    }
+
+    .section-4 .middle p {
+        font-size: 10px;
+    }
+
+    .section-4 .buttom .title h4{
+        font-size: 20px;
+    }
+
+    .section-4 .buttom .last{
+        gap: 10px;
+        width: 80%;
+        height: 40px;
+    }
+
+    .section-4 .buttom .last .style1 {
+        font-size: 12px;
+    }
+
+    .section-4 .buttom .last .style2{
+        height: 20px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .section-1 .content{
+        /* width: 100%; */
+        flex-direction: column;
+    }
+
+    .section-1 .content .left {
+        width: 100%;
+    }
+
+    .section-1 .content .left .left-content .left-btn{
+        margin: 0px;
+        width: 25%;
+        margin-right: 10px;
+    }
+
+    .section-1 .content .left .left-content .right-btn{
+        margin: 0px;
+        width: 25%;
+    }
+
+    .section-1 .content .right{
+        padding-top: 30px;
+    }
+
+    .section-1 .content .right .img img {
+        height: 150px;
+    }
+
+    .section-2 .container-2 .right .title h3{
+        font-size: 20px;
+    }
+
+    .section-2 .container-2 .right .desc p{
+        font-size: 10px;
+    }
+
+    .section-3 .main-container .left{
+        width: 90%;
+    }
+
+    .section-3 .main-container .left .title h3{
+        font-size: 15px;
+    }
+
+    .section-3 .main-container .left .desc p{
+        font-size: 8px;
+    }
+
+    .section-3 .main-container .left .image-container .img1 img{
+        width: 50px;
+    }
+
+    .section-3 .main-container .left .image-container .img2 img{
+        width: 50px;
+    }
+
+    .section-4 .buttom .desc p {
+        font-size: 8px;
+    }
+
+    .section-5 footer .container-1 .div1 title p{
+        font-size: 10px;
+    }
+
+    .section-5 footer .container-2 .div1 p{
+        font-size: 5px;
+    }
+
+    .section-5 footer .container-2 .div2 p{
+        font-size: 5px;
+    }
+
+}
+
+@media only screen and (max-width: 350px){
+    .section-1 .content .left .left-content .left-btn{
+        width: 30%;
+    }
+
+    .section-1 .content .left .left-content .right-btn{
+        width: 30%;
+    }
+
+    .section-2 .container-2 .right .title h3 {
+        font-size: 15px;
+    }
+
+    .section-2 .container-2 .right .desc p {
+        font-size: 8px;
+    }
+
+    .section-4 .top .left .heading h5{
+        font-size: 12px;
+    }
+
+    .section-4 .top .left .title h3{
+        font-size: 15px;
+    }
+
+    .section-4 .top .left .title h3 span{
+        font-size: 15px;
+    }
+
+    .section-4 .top .left .desc p {
+        font-size: 10px;
+    }
+
+    .section-4 .top .left .sec-4-btn{
+        width: 50%;
+    }
+
+    .section-4 .top .right{
+        padding-top: 30px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .section-4 .buttom .desc p{
+        font-size: 6px;
+    }
+
+    .section-4 .buttom .last .style2{
+        width: 30%;
+        font-size: 10px;
+    }
+
+    .section-5 footer .container-1 .div1 .heading h4 {
+        font-size: 15px;
+    }
+
+    .section-5 footer .container-1 .div1 title p{
+        font-size: 8px;
+    }
+
+    .section-5 footer .container-1 .div1 .sec-5-btn img{
+        width: 40%;
+    }
+
+    .section-5 footer .container-1 .div2 .heading h4{
+        font-size: 10px;
+    }
+
+    .section-5 footer .container-1 .div2 .list ul li{
+        font-size: 8px;
+    }
+
+    .section-5 footer .container-1 .div3 .heading h4{
+        font-size: 10px;
+    }
+
+    .section-5 footer .container-1 .div3 .list ul li{
+        font-size: 8px;
+    }
+
+    .section-5 footer .container-1 .div4 .heading h4{
+        font-size: 10px;
+    }
+
+    .section-5 footer .container-1 .div4 .list ul li{
+        font-size: 8px;
+    }
+
+    .section-5 footer .container-2 .div1 p {
+        font-size: 4px;
+    }
+
+    .section-5 footer .container-2 .div2 p {
+        font-size: 4px;
+    }
+
+    .section-5 footer .container-2 .div3 svg{
+        height: 10px;
+        width: 10px;
+    }
 }
