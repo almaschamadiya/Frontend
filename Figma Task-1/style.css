@@ -1423,7 +1423,7 @@
     }
 
     .section-1 .content .left .left-content .left-btn span{
-        font-size: 5px;
+        font-size: 10px;
     }
 
     .section-1 .content .left .left-content .right-btn{
@@ -1431,7 +1431,7 @@
     }
 
     .section-1 .content .left .left-content .right-btn span{
-        font-size: 5px;
+        font-size: 10px;
     }
 
     .section-1 .content .right .img img {
@@ -1486,8 +1486,14 @@
         width: 90%;
     }
 
+    .section-4 .top .right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
     .section-4 .top .right img {
-        height: 250px;
+        height: 300px;
     }
 
     .section-4 .middle p {
@@ -1503,6 +1509,7 @@
         width: 80%;
         height: 40px;
     }
+
 
     .section-4 .buttom .last .style1 {
         font-size: 12px;
@@ -1526,13 +1533,13 @@
 
     .section-1 .content .left .left-content .left-btn{
         margin: 0px;
-        width: 25%;
+        width: 40%;
         margin-right: 10px;
     }
 
     .section-1 .content .left .left-content .right-btn{
         margin: 0px;
-        width: 25%;
+        width: 40%;
     }
 
     .section-1 .content .right{
@@ -1540,7 +1547,7 @@
     }
 
     .section-1 .content .right .img img {
-        height: 150px;
+        height: 250px;
     }
 
     .section-2 .container-2 .right .title h3{
@@ -1548,7 +1555,8 @@
     }
 
     .section-2 .container-2 .right .desc p{
-        font-size: 10px;
+        font-size: 13px;
+        text-align: center;
     }
 
     .section-3 .main-container .left{
@@ -1591,11 +1599,19 @@
 
 @media only screen and (max-width: 350px){
     .section-1 .content .left .left-content .left-btn{
-        width: 30%;
+        width: 40%;
+    }
+
+    .section-1 .content .left .left-content .left-btn span {
+        font-size: 10px;
     }
 
     .section-1 .content .left .left-content .right-btn{
-        width: 30%;
+        width: 40%;
+    }
+
+    .section-1 .content .left .left-content .right-btn span{
+        font-size: 10px;
     }
 
     .section-2 .container-2 .right .title h3 {
