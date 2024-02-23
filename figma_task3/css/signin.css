@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.contianer {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left img {
+    width: 350px
+}
+
+.right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 24px;
+    background: rgb(26, 26, 26);
+}
+
+
+.heading {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+    background: rgb(26, 26, 26);
+}
+
+.tag {
+    color: rgb(221, 221, 221);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-top: 10px;
+    background: rgb(26, 26, 26);
+}
+
+form {
+    width: 80%;
+    /* margin-top: 40px; */
+    background: rgb(26, 26, 26);
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 5px;
+    background: rgb(26, 26, 26);
+}
+
+label {
+    color: rgb(221, 221, 221);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
+    letter-spacing: 0%;
+    text-align: left;
+    background: rgb(26, 26, 26);
+}
+
+input[type="text"] {
+    box-sizing: border-box;
+    border: 1px solid rgb(58, 87, 232);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.08);
+    line-height: 50px;
+    color: white;
+    padding: 0px 10px;
+}
+
+input[type="password"] {
+    box-sizing: border-box;
+    border: 1px solid rgb(58, 87, 232);
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+    line-height: 50px;
+    padding: 0px 10px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    background: rgb(26, 26, 26);
+}
+
+.options .options-left {
+    background: rgb(26, 26, 26);
+}
+
+.options .options-left span {
+    color: rgb(221, 221, 221);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-left: 10px;
+    text-align: start;
+    background: rgb(26, 26, 26);
+}
+
+.options .options-right {
+    color: rgb(219, 12, 38);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-align: end;
+    cursor: pointer;
+    background: rgb(26, 26, 26);
+}
+
+form .btn {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    background: rgb(26, 26, 26);
+}
+
+form .btn div {
+    border-radius: 4px;
+    background: rgb(219, 12, 38);
+    width: fit-content;
+    padding: 20px 40px;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    /* gap: 20px; */
+    align-items: center;
+    background: rgb(26, 26, 26);
+}
+
+.footer .account-options {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
+    letter-spacing: 0%;
+    text-align: left;
+    cursor: pointer;
+    background: rgb(26, 26, 26);
+}
+
+.footer .icons {
+    background: rgb(26, 26, 26);
+}
+
+.footer .icons ul {
+    display: flex;
+    background: rgb(26, 26, 26);
+}
+
+.footer .icons ul li {
+    list-style: none;
+    cursor: pointer;
+    background: rgb(26, 26, 26);
+}
+
+.footer .icons ul li img {
+    background: rgb(26, 26, 26);
+}
+
+.footer .signup-option {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
+    letter-spacing: 0%;
+    text-align: left;
+    cursor: pointer;
+    background: rgb(26, 26, 26);
+}
+
+@media only screen and (max-width: 800px) {
+    .contianer {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contianer .right {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    form {
+        width: 100%;
+    }
+    .footer .signup-option{
+        font-size: 12px;
+    }
+}
+
+
+

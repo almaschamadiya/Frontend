@@ -1,0 +1,53 @@
+.container {
+    background-color: black;
+    min-height: 100vh;
+}
+
+.container .div1 {
+    padding: 20px;
+}
+
+.container .div1 img {
+    width: 150px;
+}
+
+.container .div2 {
+    width: 100%;
+    display: flex;
+    padding-top: 40px;
+    align-items: center;
+}
+
+.container .div2 .left {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.container .div2 .left img {
+    width: 400px;
+}
+
+.container .div2 .right {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.container .div2 .right img {
+    width: 100%;
+}
+
+@media only screen and (max-width: 850px) {
+    .div2 {
+        flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+
+    .container .div2 .left img {
+        width: 350px;
+        margin-top: 20px;
+    }
+
+}
