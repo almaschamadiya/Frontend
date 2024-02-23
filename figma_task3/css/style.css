@@ -1,0 +1,1091 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    /* background-color: red; */
+    display: flex;
+}
+
+.left-navbar {
+    width: fit-content;
+    position: sticky;
+    top: 0;
+    /* height: 100vh; */
+    background-color: #212529;
+    box-sizing: border-box;
+}
+
+.left-navbar .logo {
+    display: flex;
+    justify-content: center;
+}
+
+.left-navbar .logo img {
+    width: 50px;
+    margin: 30px 0px;
+}
+
+.left-navbar .nav-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-navbar .nav-icon .nav-item {
+    padding: 20px 20px;
+}
+
+.left-navbar .nav-icon .nav-item:hover {
+    background: linear-gradient(90.21deg, rgb(254, 31, 39) -53.05%, rgba(254, 31, 39, 0) 83.329%);
+}
+
+.container .main-content {
+    width: 100%;
+}
+
+.container .top-navbar {
+    position: sticky;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #212529;
+    box-sizing: border-box;
+    top: 0;
+}
+
+.container .top-navbar .left {
+    width: 30%;
+    margin-left: 20px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px 24px 8px 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    border-radius: 8px;
+    background: #333;
+}
+
+.container .top-navbar .left .input {
+    width: 80%;
+    background: #333;
+}
+
+.container .top-navbar .left .input input {
+    width: 100%;
+    background: #333;
+    padding: 5px;
+    border: none;
+    outline: none;
+    color: rgb(173, 181, 189);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.container .top-navbar .left .input input::placeholder {
+    color: rgb(173, 181, 189);
+}
+
+.container .top-navbar .left .icon {
+    display: flex;
+    justify-content: end;
+    width: 20%;
+}
+
+.top-navbar .right {
+    width: 70%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.top-navbar .right .img {
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.top-navbar .right .img img {
+    width: 40px;
+    height: 40px;
+    padding: 0px 5px;
+}
+
+.top-navbar .right .img .profile-img {
+    width: 50px;
+    height: 50px;
+    padding: 0px 5px;
+}
+
+.top-navbar .right .content {
+    width: 20%;
+}
+
+.top-navbar .right .content .profile-name span {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 20px;
+    color: rgb(238, 238, 238);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    text-align: left;
+    padding: 3px;
+}
+
+.top-navbar .right .content .desg span {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 20px;
+    color: rgb(238, 238, 238);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    text-align: left;
+    padding: 3px;
+}
+
+.container .main-content {
+    background-color: #101010;
+}
+
+.container .main-content .greetings {
+    padding-top: 10px;
+    padding-left: 30px;
+    display: flex;
+}
+
+.container .main-content .greetings .left {
+    width: 70%;
+}
+
+.container .main-content .greetings .left .title h5 {
+    color: rgb(254, 31, 39);
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 2%;
+    text-align: left;
+}
+
+.container .main-content .greetings .left .desc h2 {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 2%;
+    text-align: left;
+}
+
+.container .main-content .greetings .right {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .main-content .greetings .right .more-game-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px 8px 24px;
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    border-radius: 8px;
+    background: rgb(117, 11, 10);
+    width: 150px;
+}
+
+.main-content .header {
+    background-image: url("img/bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 24px;
+    background-color: rgb(21, 21, 21);
+    margin: 30px;
+    display: flex;
+}
+
+.main-content .header .left {
+    width: 33%;
+    padding-left: 20px;
+}
+
+.main-content .header .left .title h6 {
+    color: rgb(251, 251, 251);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 2%;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.main-content .header .left .desc p {
+    font-family: Oswald;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 74px;
+    letter-spacing: 2%;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.main-content .header .left .desc p span {
+    color: #FE1F27;
+}
+
+.main-content .header .left .btnn {
+    display: flex;
+    padding-top: 20px;
+}
+
+.main-content .header .left .btnn .btnn-know span {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px 16px 32px;
+    background-color: #FE1F27;
+    border-radius: 5px;
+    margin-right: 30px;
+}
+
+.main-content .header .left .btnn .btnn-play span {
+    color: #FE1F27;
+    font-family: Poppins;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px 16px 32px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+.main-content .header .middle {
+    width: 33%;
+}
+
+.main-content .header .middle img {
+    width: 100%;
+}
+
+.main-content .header .right {
+    width: 33%;
+    padding-left: 20px;
+}
+
+.main-content .header .right .heading h6 {
+    color: rgb(251, 251, 251);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main-content .header .right .img {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.main-content .header .right .img img {
+    width: 100%
+}
+
+.section-1 {
+    display: flex;
+    padding-top: 100px;
+}
+
+.section-1 .events {
+    width: 70%;
+}
+
+.section-1 .tournament {
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+.section-1 .tournament .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.section-1 .tournament .heading .title {
+    color: rgb(255, 255, 255);
+    font-family: Oswald;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 47px;
+    letter-spacing: 2%;
+    text-align: center;
+}
+
+.section-1 .tournament .heading .more {
+    color: #FE1F27;
+    font-family: Oswald;
+    font-size: 20px;
+}
+
+.section-1 .tournament .cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-1 .tournament .cards .card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 24px;
+    border-radius: 24px;
+    box-shadow: 1px 13px 73px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(32, 32, 32);
+    /* border: 2px solid green; */
+    margin: 10px;
+}
+
+.section-1 .tournament .cards .card img {
+    max-width: 100%;
+}
+
+.section-1 .tournament .cards .card .time {
+    font-family: Oswald;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0%;
+    color: white;
+    padding: 10px 0px;
+}
+
+.section-1 .tournament .cards .card .time span {
+    color: #FE1F27;
+}
+
+.section-1 .tournament .cards .card .title {
+    color: rgb(255, 255, 255);
+    font-family: Oswald;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 2%;
+}
+
+.section-1 .tournament .cards .card .stats .item .title {
+    color: #FE1F27;
+    font-weight: 500;
+}
+
+.section-1 .tournament .cards .card .stats .item .desc {
+    color: white;
+}
+
+.section-1 .achivement {
+    width: 100%;
+    /* border: 2px solid orange; */
+}
+
+.section-1 .achivement .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.section-1 .achivement .heading .title {
+    color: rgb(255, 255, 255);
+    font-family: Oswald;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 47px;
+    letter-spacing: 2%;
+    text-align: center;
+}
+
+.section-1 .achivement .heading .more {
+    color: #FE1F27;
+    font-family: Oswald;
+    font-size: 20px;
+}
+
+.section-1 .achivement .cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-1 .achivement .cards .card {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 24px;
+    border-radius: 24px;
+    box-shadow: 1px 13px 73px 0px rgba(0, 0, 0, 0.15);
+    background: rgb(32, 32, 32);
+    /* border: 2px solid green; */
+    margin: 10px;
+}
+
+.section-1 .achivement .cards .card .top {
+    /* border: 2px solid red; */
+    color: white;
+    display: flex;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.section-1 .achivement .cards .card .trophy {
+    /* border: 2px solid green; */
+    color: white;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 5px; */
+    background: rgb(8, 8, 8);
+    border-radius: 5px;
+    width: 60%;
+}
+
+.section-1 .achivement .cards .card .trophy img {
+    height: 30px;
+}
+
+.section-1 .achivement .cards .card .trophy span {
+    color: rgb(254, 31, 39);
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.section-1 .achivement .cards .card .time {
+    /* border: 2px solid orange; */
+    color: white;
+    background: rgb(8, 8, 8);
+    /* padding: 5px; */
+    border-radius: 5px;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1 .achivement .cards .card .time p {
+    padding-left: 5px;
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.section-1 .achivement .cards .card .middle {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1 .achivement .cards .card .middle .img {
+    /* border: 2px solid green; */
+    margin-right: 15px;
+    padding: 5px;
+}
+
+.section-1 .achivement .cards .card .middle .img img {
+    height: 60px;
+}
+
+.section-1 .achivement .cards .card .middle .content {
+    /* border: 2px solid orange; */
+    /* margin-right: 20px; */
+    width: 60%;
+}
+
+.section-1 .achivement .cards .card .middle .content .title {
+    color: white;
+}
+
+.section-1 .achivement .cards .card .middle .content .title p {
+    color: rgb(255, 255, 255);
+    font-family: Oswald;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 4%;
+    text-align: left;
+}
+
+.section-1 .achivement .cards .card .middle .content .tag {
+    color: red;
+}
+
+.section-1 .achivement .cards .card .middle .content .tag p {
+    color: rgb(254, 31, 39);
+    font-family: Oswald;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 2%;
+    text-align: left;
+}
+
+.section-1 .achivement .cards .card .bottom {
+    /* border: 2px solid red; */
+}
+
+.section-1 .achivement .cards .card .bottom .range .progress-bar {
+    width: 100%;
+    height: 5px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.section-1 .achivement .cards .card .bottom .range .progress-bar .progress {
+    width: 30%;
+    height: 100%;
+    background-color: #FE1F27;
+    border-radius: 5px;
+    transition: width 0.3s ease-in-out;
+}
+
+.section-1 .achivement .cards .card .bottom .stats {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-1 .achivement .cards .card .bottom .stats .left {
+    color: rgb(171, 169, 194);
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.section-1 .achivement .cards .card .bottom .stats .right {
+    color: rgb(254, 31, 39);
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.section-1 .chat {
+    width: 30%;
+    /* border: 2px solid green; */
+    background-color: #212529;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 0px 20px;
+}
+
+.section-1 .chat .heading {
+    height: 80px;
+    /* border: 2px solid red ; */
+    border-bottom: 1px solid gainsboro;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+.section-1 .chat .heading .title {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: capitalize;
+}
+
+.section-1 .chat .heading .close {
+    cursor: pointer;
+}
+
+.section-1 .chat .container {
+    /* border: 2px solid blue; */
+    padding: 20px 10px;
+}
+
+.section-1 .chat .container:hover {
+    background: linear-gradient(90.00deg, rgb(254, 31, 39) -18.404%, rgba(254, 31, 39, 0) 78.98%);
+    cursor: pointer;
+}
+
+.section-1 .chat .container .img {
+    margin-right: 20px;
+}
+
+.section-1 .chat .container .content .div-1 {
+    display: flex;
+}
+
+.section-1 .chat .container .content .div-1 .arrow {
+    margin-right: 5px;
+}
+
+.section-1 .chat .container .content .div-1 .details .title {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.section-1 .chat .container .content .div-1 .details .level {
+    color: rgb(171, 173, 181);
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 200;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.section-1 .chat .container .content .div-2 {
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.section-2 {
+    margin: 30px 0px;
+    display: flex;
+    padding-bottom: 60px;
+}
+
+.container .box {
+    background-color: #101010;
+    width: 70%;
+}
+
+.container .box .banner {
+    /* border: 2px solid red; */
+    /* height: 200px; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.container .box .banner .details-1 .title span {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.container .box .banner .details-1 .heading h6 {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.container .box .banner .btn {
+    display: flex;
+    align-items: center;
+}
+
+.container .box .banner .btn-time-left {
+    border-radius: 4px;
+    background: rgb(254, 31, 39);
+    padding: 10px;
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.container .box .banner .rewards {
+    border-radius: 4px;
+    background: rgb(32, 32, 32);
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.container .box .border-less-table {
+    /* border: 2px solid purple; */
+    color: white;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0px 30px;
+}
+
+.container .box .border-less-table th,
+td {
+    border-collapse: collapse;
+}
+
+.container .box .border-less-table tr:nth-child(odd) {
+    background: rgb(32, 32, 32);
+}
+
+.container .box .border-less-table tr td {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.container .box .border-less-table .col-1 {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.container .box .border-less-table .col-1 .img img {
+    margin-right: 10px;
+}
+
+.container .box .border-less-table .time {
+    color: rgb(254, 31, 39);
+}
+
+.video-link {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.video-link img {
+    width: 340px;
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+
+.container .footer {
+    background-color: #212529;
+    display: flex;
+    padding: 10px 10px;
+}
+
+.container .footer .div1 p {
+    color: rgb(238, 238, 238);
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.container .footer .copyright {
+    width: 50%;
+    display: flex;
+    gap: 10px;
+}
+
+.container .footer .div2 p {
+    color: rgb(238, 238, 238);
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.container .footer .div3 {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.container .footer .div3 p {
+    color: rgb(238, 238, 238);
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+@media only screen and (max-width: 1330px) {
+    .section-1 .achivement .cards .card {
+        min-width: 29%;
+    }
+    .section-1 .tournament .cards .card {
+        min-width: 29%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .header .left {
+        min-width: 50%;
+    }
+
+    .header .middle {
+        min-width: 50%;
+    }
+
+    .header .right {
+        display: none;
+    }
+
+    .section-1 {
+        padding-top: 50px;
+    }
+
+    .section-1 .events {
+        width: 100%;
+    }
+
+    .section-1 .chat {
+        display: none;
+    }
+
+    .section-2 .video-link {
+        display: none;
+    }
+
+    .section-2 .box {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .top-navbar .right .content .profile-name span {
+        font-size: 15px;
+    }
+
+    .top-navbar .right .content .desg span {
+        font-size: 10px;
+    }
+
+    .top-navbar .right .img img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .top-navbar .right .img .profile-img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .top-navbar .left {
+        min-width: 40%;
+    }
+
+    .top-navbar .right .content .profile-name span {
+        font-size: 10px
+    }
+
+    .main-content .header .left .btnn .btnn-know span {
+        padding: 10px;
+    }
+
+    .main-content .header .left .btnn .btnn-play span {
+        padding: 10px 20px;
+    }
+
+    .section-1 .tournament .cards .card {
+        min-width: 46%;
+    }
+
+    .section-1 .achivement .cards .card {
+        min-width: 46%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-content .header .left .desc p {
+        font-size: 30px;
+    }
+
+    .main-content .header .left .btnn .btnn-know span {
+        padding: 8px;
+    }
+
+    .border-less-table td:nth-child(3),
+    .border-less-table th:nth-child(3),
+    .border-less-table td:nth-child(4),
+    .border-less-table th:nth-child(4) {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+    .container .main-content .greetings .right {
+        display: none;
+    }
+
+    .container .main-content .greetings .left {
+        min-width: 100%;
+    }
+
+    .main-content .header .left .desc p {
+        line-height: 40px;
+    }
+
+    .main-content .header .left .btnn .btnn-know span {
+        font-size: 14px;
+    }
+
+    .main-content .header .left .btnn .btnn-play span {
+        font-size: 14px;
+    }
+
+    .section-1 .tournament .cards .card {
+        min-width: 45%;
+    }
+
+    .section-1 .achivement .cards .card {
+        min-width: 45%;
+    }
+    .container .footer .div3 p {
+        font-size: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+    .top-navbar .right {
+        display: none;
+    }
+    .top-navbar .left {
+        min-width: 90%
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .main-content .header .left .btnn {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-content .header .left .btnn .btnn-know span {
+        width: 200px;
+    }
+
+    .main-content .header .left .btnn .btnn-play span {
+        width: 200px;
+    }
+
+    .section-1 .tournament .heading .more {
+        display: none;
+    }
+
+    .section-1 .tournament .heading .title {
+        font-size: 30px;
+    }
+
+    .section-1 .tournament .cards .card {
+        width: 100%;
+    }
+
+    .section-1 .achivement .cards .card {
+        width: 100%;
+    }
+
+    .section-1 .achivement .heading .more {
+        display: none;
+    }
+
+    .container .box .banner .btn {
+        display: none;
+    }
+}
+
+
+
+
+
+
+

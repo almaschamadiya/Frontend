@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.container .content {
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container .div1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .div1 img {
+    width: 500px;
+}
+
+.container .div2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.container .div2 .heading h3 {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-top: 20px;
+    margin: 0px;
+}
+
+.container .div2 .title p {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.container .div2 .error-btn span {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    text-align: left;
+    position: static;
+    width: 106px;
+    height: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px 8px 24px;
+    border-radius: 4px;
+    box-shadow: 0px 8px 32px 0px rgba(0, 16, 41, 0.05);
+    background: rgb(219, 12, 38);
+}
+
+.container .div3 {
+    display: flex;
+    justify-content: end;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.container .div3 img {
+    width: 100px;
+
+}
+
+@media only screen and (max-width: 850px) {
+
+    .container .div1 img {
+        width: 350px;
+    }
+
+    .container .div2 .heading h3 {
+        font-size: 25px;
+    }
+    
+
+}
