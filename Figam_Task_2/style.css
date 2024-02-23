@@ -34,7 +34,7 @@
 
 .app {
     color: #444;
-    font-size: 63px;
+    font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -114,9 +114,18 @@
 
 .about-desc {
     color: #777;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 400;
     text-transform: capitalize;
+}
+
+.iconBtn{
+    display: flex;
+    flex-direction: column;
+}
+
+.iconBtn .my-btn{
+    align-self: center;
 }
 
 .icon-div-2 {
@@ -125,7 +134,7 @@
 
 .icon-desc {
     color: #444;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 600;
     letter-spacing: 1px;
     margin-left: 5px;
@@ -339,9 +348,19 @@
     margin-top: 30px;
 }
 
+.section-9 form{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.section-9 form .my-btn{
+    align-self: center;
+}
+
 .section-9-heading {
     color: #444;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 300;
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -349,7 +368,7 @@
 }
 
 .section-9-heading span {
-    font-weight: 700
+    font-weight: 600
 }
 
 .btn3 {
@@ -615,6 +634,17 @@
 
     .email {
         max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .section-3{
+        background-image: none;
+    }
+
+    .feature{
+        font-size: 25px;
+        text-align: center;
     }
 }
 
