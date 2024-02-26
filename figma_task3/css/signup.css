@@ -238,4 +238,8 @@ form .btn div {
     .container .right .content {
         width: 100%;
     }
+    .footer {
+        gap: 10px;
+        margin-top: 10px;
+    }
 }
