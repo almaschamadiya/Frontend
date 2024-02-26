@@ -117,4 +117,8 @@
         width: 95%;
     }
 
+    .container .content .div2 .right {
+        margin-bottom: 10px;
+    }
+
 }
