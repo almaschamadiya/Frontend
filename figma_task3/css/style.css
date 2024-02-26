@@ -898,6 +898,7 @@ td {
     .section-1 .achivement .cards .card {
         min-width: 29%;
     }
+
     .section-1 .tournament .cards .card {
         min-width: 29%;
     }
@@ -981,6 +982,21 @@ td {
     .section-1 .achivement .cards .card {
         min-width: 46%;
     }
+
+    .container .box .table-container {
+        overflow-x: auto;
+        width: 100%;
+    }
+
+    .container .box .border-less-table {
+        width: 800px;
+    }
+
+    .container .box .border-less-table th,
+    .container .box .border-less-table td {
+        padding: 5px;
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -990,13 +1006,6 @@ td {
 
     .main-content .header .left .btnn .btnn-know span {
         padding: 8px;
-    }
-
-    .border-less-table td:nth-child(3),
-    .border-less-table th:nth-child(3),
-    .border-less-table td:nth-child(4),
-    .border-less-table th:nth-child(4) {
-        display: none;
     }
 
 }
@@ -1029,6 +1038,7 @@ td {
     .section-1 .achivement .cards .card {
         min-width: 45%;
     }
+
     .container .footer .div3 p {
         font-size: 10px;
     }
@@ -1039,6 +1049,7 @@ td {
     .top-navbar .right {
         display: none;
     }
+
     .top-navbar .left {
         min-width: 90%
     }
@@ -1050,12 +1061,24 @@ td {
         gap: 10px;
     }
 
+    .main-content .header .left {
+        width: 100%;
+    }
+
+    .main-content .header .middle {
+        display: none;
+    }
+
     .main-content .header .left .btnn .btnn-know span {
         width: 200px;
     }
 
     .main-content .header .left .btnn .btnn-play span {
         width: 200px;
+    }
+
+    .section-1 {
+        padding: 0px;
     }
 
     .section-1 .tournament .heading .more {
@@ -1081,11 +1104,23 @@ td {
     .container .box .banner .btn {
         display: none;
     }
+
+    .container .main-content .greetings .left .desc h2 {
+        font-size: 24px;
+    }
+
+    .container .footer {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .container .footer .copyright {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .container .footer .div3 {
+        justify-content: start;
+        width: 100%;
+    }
 }
-
-
-
-
-
-
-
