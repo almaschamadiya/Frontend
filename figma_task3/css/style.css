@@ -14,7 +14,7 @@
     width: fit-content;
     position: sticky;
     top: 0;
-    /* height: 100vh; */
+    height: 100vh;
     background-color: #212529;
     box-sizing: border-box;
 }
@@ -905,6 +905,11 @@ td {
 }
 
 @media only screen and (max-width: 1100px) {
+
+    .top-navbar .right .content {
+        width: 35%;
+    }
+
     .header .left {
         min-width: 50%;
     }
@@ -919,14 +924,24 @@ td {
 
     .section-1 {
         padding-top: 50px;
+        flex-direction: column;
+    }
+
+    .section-1 .chat {
+        width: 93%;
+        margin-top: 10px;
+    }
+
+    .section-1 .chat .container {
+        justify-content: space-between;
+    }
+
+    .section-1 .chat .container .left {
+        display: flex;
     }
 
     .section-1 .events {
         width: 100%;
-    }
-
-    .section-1 .chat {
-        display: none;
     }
 
     .section-2 .video-link {
@@ -939,6 +954,16 @@ td {
 }
 
 @media only screen and (max-width: 800px) {
+    .top-navbar .right .img {
+        gap: 10px;
+    }
+
+    .top-navbar .right .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .top-navbar .right .content .profile-name span {
         font-size: 15px;
     }
@@ -963,6 +988,7 @@ td {
         min-width: 40%;
     }
 
+
     .top-navbar .right .content .profile-name span {
         font-size: 10px
     }
@@ -975,12 +1001,37 @@ td {
         padding: 10px 20px;
     }
 
+    .section-1 .tournament .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     .section-1 .tournament .cards .card {
-        min-width: 46%;
+        /* min-width: 46%; */
+        width: 90%;
+    }
+
+    .section-1 .achivement .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .section-1 .achivement .cards .card {
-        min-width: 46%;
+        /* min-width: 46%; */
+        width: 90%;
+    }
+
+    .section-1 {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-1 .chat {
+        width: 90%;
     }
 
     .container .box .table-container {
@@ -1024,11 +1075,11 @@ td {
     }
 
     .main-content .header .left .btnn .btnn-know span {
-        font-size: 14px;
+        font-size: 10px;
     }
 
     .main-content .header .left .btnn .btnn-play span {
-        font-size: 14px;
+        font-size: 10px;
     }
 
     .section-1 .tournament .cards .card {
@@ -1054,6 +1105,7 @@ td {
         min-width: 90%
     }
 }
+
 
 @media only screen and (max-width: 400px) {
     .main-content .header .left .btnn {
@@ -1081,28 +1133,55 @@ td {
         padding: 0px;
     }
 
-    .section-1 .tournament .heading .more {
+    /* .section-1 .tournament .heading .more { 
         display: none;
-    }
+    }  */
 
     .section-1 .tournament .heading .title {
-        font-size: 30px;
+        font-size: 25px;
+    }
+
+    .section-1 .tournament .heading .more {
+        font-size: 15px;
     }
 
     .section-1 .tournament .cards .card {
-        width: 100%;
+        width: 90%;
     }
 
-    .section-1 .achivement .cards .card {
-        width: 100%;
+    .section-1 .achivement .heading .title {
+        font-size: 25px;
     }
 
     .section-1 .achivement .heading .more {
-        display: none;
+        font-size: 15px;
     }
 
-    .container .box .banner .btn {
+    .section-1 .achivement .cards .card {
+        width: 90%;
+    }
+
+    /* .section-1 .achivement .heading .more {
         display: none;
+    } */
+
+    /* .container .box .banner .btn {
+        display: none;
+    } */
+
+    .container .box .banner {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .container .box .banner .btn .btn-time-left {
+        padding: 5px;
+    }
+
+    .container .box .banner .btn .rewards {
+        padding: 5px;
     }
 
     .container .main-content .greetings .left .desc h2 {
