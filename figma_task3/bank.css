@@ -1,0 +1,225 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.container {
+    padding: 40px 0px;
+}
+
+.container .div1 {
+    display: flex;
+    justify-content: center;
+}
+
+.container .div1 img {
+    width: 800px;
+}
+
+.container .div2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 40px 0px;
+}
+
+.container .div2 .heading h4 {
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.container .div2 .title p {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.container .div2 .seconds p {
+    color: rgb(233, 62, 44);
+    font-family: Inter;
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0px;
+}
+
+.container .div2 .mail {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.container .div2 .mail .input {
+    width: 50%;
+}
+
+.container .div2 .mail .input input {
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
+    letter-spacing: 0%;
+    text-align: left;
+    background-color: black;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    width: 100%;
+    padding: 5px 20px;
+}
+
+.container .div2 .mail .button {
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px 0px rgba(75, 118, 249, 0.5);
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.container .div2 .mail .button span {
+    color: rgb(243, 3, 3);
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+@media only screen and (max-width: 800px) {
+    .container .div1 img {
+        width: 700px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .container .div1 img {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container .div1 img {
+        width: 500px;
+    }
+
+    .container .div2 .heading h4{
+        font-size: 30px;
+    }
+
+    .container .div2 .title p{
+        font-size: 14px;
+    }
+
+    .container .div2 .seconds p{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container .div1 img {
+        width: 400px;
+    }
+
+    .container .div2 .heading h4{
+        font-size: 25px;
+    }
+
+    .container .div2 .seconds p{
+        font-size: 25px;
+    }
+
+    .container .div2 .mail .input input {
+        line-height: normal;
+    }
+
+    .container .div2 .mail .button span {
+        line-height: normal;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .container .div1 img {
+        width: 300px;
+    }
+
+    .container .div2 .heading h4{
+        font-size: 20px;
+    }
+
+    .container .div2 .title p{
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .container .div2 .seconds p{
+        font-size: 20px;
+    }
+
+    .container .div2 .mail .input input {
+        font-size: 14px;
+    }
+
+    .container .div2 .mail .button span {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container{
+        padding: 40px 10px;
+    }
+    .container .div2 .mail {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .container .div2 .mail .input{
+        width: 80%;
+        margin: 0px auto;
+    }
+    .container .div2 .mail .button {
+        width: 80%;
+        margin: 0px auto;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .container .div1 img {
+        width: 250px;
+    }
+    .container{
+        padding: 40px 10px;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .container .div2 .heading h4{
+        line-height: normal;
+    }
+}
+
+

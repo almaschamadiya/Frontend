@@ -904,7 +904,11 @@ td {
     }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1200px) {
+
+    .main-content .header .middle img {
+        width: 70%;
+    }
 
     .top-navbar .right .content {
         width: 35%;
@@ -927,8 +931,16 @@ td {
         flex-direction: column;
     }
 
+    .section-1 .tournament .cards{
+        justify-content: center;
+    }
+
+    .section-1 .achivement .cards{
+        justify-content: center;
+    }
+
     .section-1 .chat {
-        width: 93%;
+        width: 95%;
         margin-top: 10px;
     }
 
@@ -944,8 +956,17 @@ td {
         width: 100%;
     }
 
+    .section-2{
+        flex-direction: column;
+        gap: 20px;
+    }
+
     .section-2 .video-link {
-        display: none;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: 100%;
+        justify-content: space-evenly;
     }
 
     .section-2 .box {
@@ -980,6 +1001,10 @@ td {
     .top-navbar .right .img .profile-img {
         width: 30px;
         height: 30px;
+    }
+
+    .section-2 .video-link img{
+        width: 300px;
     }
 }
 
@@ -1048,6 +1073,14 @@ td {
         padding: 5px;
         font-size: 12px;
     }
+
+    .section-2 .video-link{
+        flex-direction: column;
+    }
+
+    .section-2 .video-link img{
+        width: 400px;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -1106,8 +1139,20 @@ td {
     }
 }
 
+@media only screen and (max-width: 500px) {
+    .section-2 .video-link img{
+        width: 350px;
+    }
+}
+
+
 
 @media only screen and (max-width: 400px) {
+
+    .section-2 .video-link img{
+        width: 250px;
+    }
+
     .main-content .header .left .btnn {
         flex-direction: column;
         gap: 10px;

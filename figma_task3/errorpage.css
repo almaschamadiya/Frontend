@@ -108,5 +108,34 @@
         width: 300px;
     }
     
+}
+
+@media only screen and (max-width: 350px){
+    .container .div1 img {
+        width: 250px;
+    }
+
+    .container .div2 .heading h3 {
+        font-size: 20px;
+    }
+
+    .container .div2 .title p {
+        font-size: 17px;
+    }
+
+}
+
+@media only screen and (max-width: 300px){
+    .container .div1 img {
+        width: 200px;
+    }
+
+    .container .div2 .heading h3 {
+        font-size: 18px;
+    }
+
+    .container .div2 .title p {
+        font-size: 15px;
+    }
 
 }

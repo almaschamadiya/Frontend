@@ -1,0 +1,227 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: black;
+    /* min-height: 100vh; */
+}
+
+.container .div1 img {
+    /* width: 100px; */
+    padding: 30px;
+}
+
+.container .div2 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.container .div2 .left {
+    width: 50%;
+    /* border: 2px solid red; */
+    /* height: 500px; */
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+}
+
+.container .div2 .left div{
+  width: 100%;
+}
+
+.container .div2 .left .content {
+    width: 80%;
+    background-color: #202020;
+    padding: 20px 0px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container .div2 .left .content .logo {
+    display: flex;
+    justify-content: center;
+}
+
+.container .div2 .left .content .heading {
+    display: flex;
+    justify-content: center;
+}
+
+.container .div2 .left .content .heading h3 {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.container .div2 .left .content .title {
+    display: flex;
+    justify-content: center;
+}
+
+.container .div2 .left .content .title p {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 175%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.container .div2 .left .content .pass{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.container .div2 .left .content .pass .label{
+    width: 90%;
+    margin: 0px auto;
+}
+
+.container .div2 .left .content .pass .label label {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.container .div2 .left .content .pass .input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container .div2 .left .content .pass .input input {
+    width: 90%;
+    border-radius: 4px;
+    background: rgb(43, 43, 43);
+    border: none;
+    height: 30px;
+}
+
+.container .div2 .left .content .btnn{
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.container .div2 .left .content .btnn span {
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
+    letter-spacing: 0%;
+    text-align: center;
+    position: static;
+    width: 188px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px 8px 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    border-radius: 4px;
+    background: rgb(219, 12, 38);
+    cursor: pointer;
+}
+
+ .container .div2 .right {
+    width: 50%;
+    /* border: 2px solid blue;  */
+}
+
+.container .div2 .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .div2 .right img{
+    width: 700px;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 950px){
+    .container .div2 .left .content{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .container .div2 .left {
+        padding: 60px 40px;
+    }
+}
+
+@media only screen and (max-width: 750px){
+    .container .div2{
+        flex-direction: column-reverse;
+    }
+
+    .container .div2 .right{
+        width: 100%;
+    }
+
+    .container .div2 .right img{
+        width: 550px;
+    }
+
+    .container .div2 .left{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .container .div2 .right img{
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .container .div2 .right img{
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .container .div2 .left .content .heading h3{
+        font-size: 25px;
+    }
+
+    .container .div2 .left .content .title p {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .container .div2 .left{
+        padding: 60px 10px;
+    }
+    .container .div2 .left .content .heading h3{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .container .div2 .left .content .title p {
+        font-size: 13px;
+        text-align: center;
+    }
+}
