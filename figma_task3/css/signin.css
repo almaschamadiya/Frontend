@@ -91,21 +91,23 @@ label {
 
 input[type="text"] {
     box-sizing: border-box;
-    border: 1px solid rgb(58, 87, 232);
+    border: none;
     border-radius: 4px;
     background: rgba(255, 255, 255, 0.08);
     line-height: 50px;
     color: white;
     padding: 0px 10px;
+    outline: none;
 }
 
 input[type="password"] {
     box-sizing: border-box;
-    border: 1px solid rgb(58, 87, 232);
+    border: none;
     border-radius: 4px;
-    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.08);
     line-height: 50px;
     padding: 0px 10px;
+    outline: none;
 }
 
 .options {
@@ -218,10 +220,20 @@ form .btn div {
     background: rgb(26, 26, 26);
 }
 
+@media only screen and (max-width: 1300px) {
+    .contianer .left img{
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     .contianer {
         flex-direction: column;
         gap: 20px;
+    }
+
+    .contianer .left{
+        width: 80%;
     }
 
     .contianer .right {

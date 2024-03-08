@@ -1,8 +1,14 @@
+/* rgb(21, 21, 21) */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
+}
+
+html, body {
+    font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -15,7 +21,7 @@
     position: sticky;
     top: 0;
     height: 100vh;
-    background-color: #212529;
+    background-color:  rgb(21, 21, 21);
     box-sizing: border-box;
 }
 
@@ -55,7 +61,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    background-color: #212529;
+    background-color:  rgb(21, 21, 21);
     box-sizing: border-box;
     top: 0;
 }
@@ -124,6 +130,7 @@
     width: 40px;
     height: 40px;
     padding: 0px 5px;
+    object-fit: contain;
 }
 
 .top-navbar .right .img .profile-img {
@@ -215,7 +222,7 @@
     padding: 8px 24px 8px 24px;
     color: rgb(255, 255, 255);
     font-family: Poppins;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     text-align: left;
     border-radius: 8px;
@@ -224,14 +231,21 @@
 }
 
 .main-content .header {
-    background-image: url("img/bg.png");
+    background-image: url('../img/bg.png');
     background-size: contain;
     background-repeat: no-repeat;
-    height: 300px;
     border-radius: 24px;
-    background-color: rgb(21, 21, 21);
     margin: 30px;
     display: flex;
+    background-color: rgb(21, 21, 21);
+}
+
+.main-content .header .lm{
+    display: flex;
+}
+
+.main-content .header .lm .left, .middle{
+    width: 50%;
 }
 
 .main-content .header .left {
@@ -393,8 +407,9 @@
     margin: 10px;
 }
 
-.section-1 .tournament .cards .card img {
+.section-1 .tournament .cards .card .img {
     max-width: 100%;
+    height: 150px;
 }
 
 .section-1 .tournament .cards .card .time {
@@ -414,10 +429,15 @@
 .section-1 .tournament .cards .card .title {
     color: rgb(255, 255, 255);
     font-family: Oswald;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 36px;
     letter-spacing: 2%;
+}
+
+.section-1 .tournament .cards .card .stats{
+    display: flex;
+    justify-content: space-between;
 }
 
 .section-1 .tournament .cards .card .stats .item .title {
@@ -427,6 +447,8 @@
 
 .section-1 .tournament .cards .card .stats .item .desc {
     color: white;
+    display: flex;
+    font-size: 14px;
 }
 
 .section-1 .achivement {
@@ -539,6 +561,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .section-1 .achivement .cards .card .middle .img {
@@ -548,7 +571,7 @@
 }
 
 .section-1 .achivement .cards .card .middle .img img {
-    height: 60px;
+    height: 55px;
 }
 
 .section-1 .achivement .cards .card .middle .content {
@@ -564,7 +587,7 @@
 .section-1 .achivement .cards .card .middle .content .title p {
     color: rgb(255, 255, 255);
     font-family: Oswald;
-    font-size: 17px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 28px;
     letter-spacing: 4%;
@@ -670,6 +693,10 @@
 .section-1 .chat .container {
     /* border: 2px solid blue; */
     padding: 20px 10px;
+}
+
+.section-1 .chat .container .left{
+   display: flex;
 }
 
 .section-1 .chat .container:hover {
@@ -894,6 +921,10 @@ td {
     text-align: left;
 }
 
+.container .footer .div3 span{
+    color: #61A0FF;
+}
+
 @media only screen and (max-width: 1330px) {
     .section-1 .achivement .cards .card {
         min-width: 29%;
@@ -907,11 +938,17 @@ td {
 @media only screen and (max-width: 1200px) {
 
     .main-content .header .middle img {
-        width: 70%;
+        width: 65%;
     }
 
     .top-navbar .right .content {
         width: 35%;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
     .header .left {
@@ -922,8 +959,21 @@ td {
         min-width: 50%;
     }
 
+    .header .middle .img{
+        display: flex;
+        justify-content: end;
+    }
+
     .header .right {
-        display: none;
+        min-width:100%;
+    }
+
+    .main-content .header .right .heading h6 {
+        font-size: 30px;
+    }
+
+    .header .right .img img{
+        max-width: 700px;
     }
 
     .section-1 {
@@ -974,6 +1024,21 @@ td {
     }
 }
 
+@media only screen and (max-width: 900px) {
+    .section-1 .achivement .cards {
+        justify-content: start;
+    }
+    .section-1 .achivement .cards .card {
+        width: 45%;
+    }
+    .section-1 .tournament .cards {
+        justify-content: start;
+    }
+    .section-1 .tournament .cards .card {
+        width: 45%;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     .top-navbar .right .img {
         gap: 10px;
@@ -1005,6 +1070,35 @@ td {
 
     .section-2 .video-link img{
         width: 300px;
+    }
+
+    .main-content .header .lm .left .title{
+        padding-bottom: 10px;
+    }
+
+    .main-content .header .left .desc p {
+        font-size: 30px;
+        line-height: normal;
+    }
+
+    .main-content .header .left .btnn .btnn-know span {
+        font-size: 17px;
+        line-height: normal;
+    }
+
+    .main-content .header .left .btnn .btnn-play span {
+        font-size: 17px;
+        line-height: normal;
+    }
+
+    .section-1 .achivement .cards .card .trophy {
+        width: fit-content;
+        padding: 0px 5px;
+    }
+
+    .section-1 .achivement .cards .card .time{
+        width: fit-content;
+        padding: 0px 5px;
     }
 }
 
@@ -1092,6 +1186,11 @@ td {
         padding: 8px;
     }
 
+    .container .main-content .greetings .left .title h5 {
+        font-size: 35px;
+        line-height: normal;
+    }
+
 }
 
 @media only screen and (max-width: 550px) {
@@ -1127,6 +1226,10 @@ td {
         font-size: 10px;
     }
 
+    .main-content .header .left .desc p {
+        font-size: 25px;
+    }
+
 }
 
 @media only screen and (max-width: 550px) {
@@ -1143,9 +1246,57 @@ td {
     .section-2 .video-link img{
         width: 350px;
     }
+
+    .main-content .header .middle img {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .main-content .header .right .heading h6 {
+        font-size: 20px;
+    }
 }
 
+@media only screen and (max-width: 450px){
+    .main-content .header .left .desc p {
+        font-size: 20px;
+        line-height: normal;
+    }
 
+    .main-content .header .left .btnn .btnn-know span {
+       font-size: 9px;
+    }
+
+    .main-content .header .left .btnn .btnn-play span {
+        font-size: 9px;
+    }
+
+}
+
+@media only screen and (max-width: 420px){
+    .main-content .header .lm {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-content .header .lm .left{
+        width: 100%;
+    }
+
+    .main-content .header .lm .middle {
+        width: 100%;
+    }
+
+    .main-content .header .lm .middle .img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-content .header .lm .middle .img img {
+       width: 80%;
+    }
+}
 
 @media only screen and (max-width: 400px) {
 
@@ -1160,10 +1311,6 @@ td {
 
     .main-content .header .left {
         width: 100%;
-    }
-
-    .main-content .header .middle {
-        display: none;
     }
 
     .main-content .header .left .btnn .btnn-know span {
@@ -1246,5 +1393,38 @@ td {
     .container .footer .div3 {
         justify-content: start;
         width: 100%;
+    }
+
+    .main-content .header .lm .left{
+        width: 100%;
+    }
+
+    .main-content .header .right .heading h6 {
+        font-size: 20px;
+    }
+
+    .main-content .header .right .heading h6 {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .main-content .header .right .heading h6 {
+        font-size: 14px;
+    }
+
+    .container .main-content .greetings .left .title h5 {
+        font-size: 25px;
+        line-height: normal;
+        padding: 0px 5px;
+    }
+
+    .container .main-content .greetings .left .desc h2 {
+        font-size: 15px;
+        padding: 0px 5px;
+    }
+
+    .section-1 .tournament .heading .title {
+        font-size: 20px;
     }
 }
