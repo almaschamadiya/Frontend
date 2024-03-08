@@ -875,7 +875,7 @@ td {
 }
 
 .container .footer {
-    background-color: #212529;
+    background-color: rgb(21, 21, 21);
     display: flex;
     padding: 10px 10px;
 }
