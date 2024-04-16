@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    /* Style for the div */
+    #hoverDiv {
+        width: 200px;
+        height: 100px;
+        background-color: #e0e0e0;
+        text-align: center;
+        line-height: 100px;
+        font-size: 24px;
+        border-radius: 10px;
+    }
+</style>
+
+<body style="background-color: pink;">
+    <h1>
+        <center> Var Example </center>
+    </h1>
+    <pre>
+        var a = 20;
+        {
+            // above a and below a is has same memory allocation.
+            var a = 10;
+            document.getElementById("varExample").innerHTML = "The value of a is: " + a;
+        }
+        document.getElementById("varExample").innerHTML = "The value of a is: " + a;
+    </pre>
+    <br>
+    <b>
+        <p id="varExample"></p>
+    </b>
+    <hr>
+    <h1>
+        <center> Let Example </center>
+    </h1>
+    <pre>
+        let b = 20;
+        {
+            // above b and below b is has different memory allocation.
+            let b = 10;
+            document.getElementById("letExample").innerHTML = "The value of b is: " + b;
+        }
+        document.getElementById("letExample").innerHTML = "The value of b is: " + b;
+    </pre>
+    <b>
+        <p id="letExample"></p>
+    </b>
+    <br>
+    <hr>
+    <h1>
+        <center> Const Example </center>
+    </h1>
+    <pre>
+        const c = 30;
+        c = 10;  // it will through an error.
+        
+    </pre>
+    <br>
+    <hr>
+
+    <h1>
+        <center> Onclick Event Example </center>
+    </h1>
+    <button onclick=onclk()> click Me!</button>
+    <br>
+    <hr>
+
+
+    <h1>
+        <center> Onchange Event Example </center>
+    </h1>
+    <input type="text" id="textInput" onchange=onchange_ex()>
+    <p id="result"><span><b>Value Entered : </b></span></p>
+    <br>
+    <hr>
+
+    <h1>
+        <center> Onmouseover and Onmouseout Event Example </center>
+    </h1>
+
+    <div id="hoverDiv" onmouseover="changeColor('red')" onmouseout="changeColor('blue')">
+        Hover over me!
+    </div>
+    <br>
+    <hr>
+
+    <h1>
+        <center> Array Methods Example </center>
+    </h1>
+
+    <h3> Array Length : </h3>
+
+    <p id="arrlen"></p>
+    <br>
+    <hr>
+
+    <h3> Array Pop() : </h3>
+    <p id="arrpop1"></p>
+    <p id="arrpop2"></p>
+
+    <br>
+    <hr>
+
+    <h3> Array Push() : </h3>
+    <p id="arrpush1"></p>
+    <p id="arrpush2"></p>
+
+    <br>
+    <hr>
+
+    <h3> Array tostring() : </h3>
+
+    <p id="demo"></p>
+    <br>
+    <hr>
+
+    <h3> Array at() : </h3>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <br>
+    <hr>
+
+    <h3> Array splice() : </h3>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <br>
+    <hr>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
